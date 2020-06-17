@@ -7,8 +7,8 @@ public class Binary {
         */
         System.out.print("Введите число в бинарном формате: ");
         Scanner scan = new Scanner(System.in);
-        long bin = scan.nextInt();
-        long binNum = Integer.parseInt(String.valueOf(bin), 2);
+        String bin = scan.nextLine();
+        int binNum = Integer.parseInt(bin, 2);
         System.out.println ("Вы ввели число " + binNum);
     }
 

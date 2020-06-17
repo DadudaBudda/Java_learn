@@ -1,5 +1,3 @@
-import javax.swing.plaf.synth.SynthOptionPaneUI;
-import java.net.SocketOption;
 import java.util.Scanner;
 
 public class Exercise6 {

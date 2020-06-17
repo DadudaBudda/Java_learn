@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SimpleMultiply {
+public class Exercise5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите число: ");

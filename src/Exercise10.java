@@ -14,12 +14,12 @@ public class Exercise10 {
                 matrix[x][i] = scanner.nextInt();
             }
         }
-        System.out.println("\n" +"\n" + "Вывод первой строки матрицы:" + "\n");
+        System.out.println("\n" + "Вывод первой строки матрицы:" + "\n");
         for(Integer i : matrix[0]) {
             System.out.print("\t" + i * 3);
         }
 
-//        System.out.println("\n" +"\n" + "Матрица:" + "\n");
+        System.out.println("\n" + "\n");
 //
 //        for (int[] ints : matrix) {
 //            for (int anInt : ints) {

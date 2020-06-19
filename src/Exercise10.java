@@ -10,12 +10,12 @@ public class Exercise10 {
                 matrix[x][i] = new Scanner(System.in).nextInt();
             }
         }
-        System.out.println("Вывод первой строки матрицы:");
+        System.out.println("\n" +"\n" + "Вывод первой строки матрицы:" + "\n");
         for(Integer i : matrix[0]) {
             System.out.print("\t" + i * 3);
         }
-        System.out.println();
-        System.out.println("Матрица:");
+
+        System.out.println("\n" +"\n" + "Матрица:" + "\n");
 
         for (int[] ints : matrix) {
             for (int anInt : ints) {

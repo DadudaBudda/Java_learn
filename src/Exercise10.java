@@ -2,12 +2,16 @@ import java.util.Scanner;
 
 public class Exercise10 {
     public static void main(String[] args) {
-        System.out.println("Введите размер матрицы: ");
-        int[][] matrix = new int[new Scanner(System.in).nextInt()][new Scanner(System.in).nextInt()];
-        for (int x = 0; x < matrix.length; ++x) {
-            for (int i = 0; i < matrix[x].length; ++i) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите кол-во строк матрицы: ");
+        int arrayStrings = scanner.nextInt();
+        System.out.print("Введите кол-во столбцов матрицы: ");
+        int arrayColumn = scanner.nextInt();
+        int[][] matrix = new int[arrayStrings][arrayColumn];
+        for (int x = 0; x < arrayStrings; ++x) {
+            for (int i = 0; i < arrayColumn; ++i) {
                 System.out.print("Введите элемент матрицы: ");
-                matrix[x][i] = new Scanner(System.in).nextInt();
+                matrix[x][i] = scanner.nextInt();
             }
         }
         System.out.println("\n" +"\n" + "Вывод первой строки матрицы:" + "\n");
@@ -15,13 +19,13 @@ public class Exercise10 {
             System.out.print("\t" + i * 3);
         }
 
-        System.out.println("\n" +"\n" + "Матрица:" + "\n");
-
-        for (int[] ints : matrix) {
-            for (int anInt : ints) {
-                System.out.print("\t" + anInt);
-            }
-            System.out.println();
-        }
+//        System.out.println("\n" +"\n" + "Матрица:" + "\n");
+//
+//        for (int[] ints : matrix) {
+//            for (int anInt : ints) {
+//                System.out.print("\t" + anInt);
+//            }
+//            System.out.println();
+//        }
     }
 }

@@ -4,8 +4,8 @@ public class Start {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите номер задачи: ");
-        var exercize = scanner.nextInt();
-        switch (exercize) {
+        var exercise = scanner.nextInt();
+        switch (exercise) {
             case 4 -> Exercise4.main(args);
             case 5 -> Exercise5.main(args);
             case 6 -> Exercise6.main(args);
